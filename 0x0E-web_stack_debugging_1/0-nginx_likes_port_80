@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#find out s keeping your Ubuntu's
+#Nginx installation from listening on port 80
+
+sudo apt-get update
+sudo apt-get -y install nginx
+
+sudo service nginx start
