@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# prints whoami for the agument user
+
+sudo -u "$1" whoami
