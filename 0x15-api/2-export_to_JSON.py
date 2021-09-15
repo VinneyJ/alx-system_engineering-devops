@@ -64,9 +64,15 @@ if __name__ == "__main__":
             arg_id = sys.argv[1]
             payload = {'id': arg_id }
             payload_todo = {'userId': id}
+            url1Todo = 'https://jsonplaceholder.typicode.com/todos
+            url2User = 'https://jsonplaceholder.typicode.com/users'
             try:
-                todo_url = requests.get('https://jsonplaceholder.typicode.com/todos', params=payload_todo).json()
-                users = requests.get('https://jsonplaceholder.typicode.com/users', params=payload).json()
+                todo_url = requests
+                .get(url1Todo, params=payload_todo)
+                .json()
+                users = requests
+                .get(url2User, params=payload)
+                .json()
             except:
                 print("could not get or purse url")
 
