@@ -1,8 +1,10 @@
+#!/usr/bin/python3
 """Exports to-do list information of all employees to JSON format."""
-import json
-import requests
+
 
 if __name__ == "__main__":
+    import json
+    import requests
     url = "https://jsonplaceholder.typicode.com/"
     users = requests.get(url + "users").json()
 
